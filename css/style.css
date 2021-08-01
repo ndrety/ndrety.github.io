@@ -211,7 +211,7 @@ footer a:hover{
     text-decoration: none;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 576px) {
     
     .jumbotron{
         height: 346px;
