@@ -81,6 +81,16 @@
     font-size: 38px;
 }
 
+.contact .contact-text{
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: 1s;
+}
+
+.contact .contact-text.muncul{
+    opacity: 1;
+    transform: translate(0,0px);
+}
 
 
 .panel{
