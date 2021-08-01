@@ -65,6 +65,17 @@
     color: black;
 }
 
+.contact .contact-text{
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: 1s;
+}
+
+.contact .contact-text.muncul{
+    opacity: 1;
+    transform: translate(0,0px);
+}
+
 
 .jumbtron .effect-wrap .effect{
     position: absolute;
@@ -81,16 +92,6 @@
     font-size: 38px;
 }
 
-.contact .contact-text{
-    opacity: 0;
-    transform: translate(0, -40px);
-    transition: 1s;
-}
-
-.contact .contact-text.muncul{
-    opacity: 1;
-    transform: translate(0,0px);
-}
 
 
 .panel{
@@ -100,6 +101,14 @@
     
 }
 
+.panel .panel-item h1{ 
+    margin: 10px;
+    font-size: 20px;
+}
+
+.panel i{
+    font-size: 25px;
+}
 
 .panel .panel-item{
     opacity: 0;
@@ -113,15 +122,6 @@
     transform: translate(0,0px);
 }
 
-
-.panel .panel-item h1{ 
-    margin: 10px;
-    font-size: 20px;
-}
-
-.panel i{
-    font-size: 25px;
-}
 
 .formulir, .message{
     margin-top: 100px;
@@ -260,8 +260,3 @@ footer a:hover{
     }
 
 }
-
-
-
-
-
