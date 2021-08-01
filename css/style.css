@@ -1,0 +1,245 @@
+.navbar{
+    background-color:#27353b;
+    font-family: 'Changa', sans-serif;
+}
+
+
+
+
+.navbar-nav{
+    text-transform: uppercase;
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item .nav-link{
+   
+    color: white;
+    margin-right: 40px;
+    
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+    
+    transition: all ease 0,5s;
+    color: turquoise;
+}
+
+.jumbotron{
+    height: 360px;
+    /* background: linear-gradient(#27353b, #2c5364); */
+    background-color:#27353b;
+    width: 100%;
+    padding: 6rem;
+}
+
+.jumbotron h1{
+    font-size: 58px;
+    color: white;
+    font-family: 'Changa', sans-serif;
+    text-align: center;
+    text-shadow: 0px 0px 2px black; 
+}
+
+.jumbotron .display-4{
+    margin-top: -23px;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    text-shadow: 0px 0px 2px black; 
+
+}
+
+
+.jumbotron .display-4 .btn-outline-secondary{
+    color:white;
+    background: transparent;
+    text-transform: uppercase;
+    text-shadow:none;
+    font-size: 12px;
+    margin: -10px;
+    
+}
+
+.jumbotron .display-4 .btn-outline-secondary:hover{
+    background: whitesmoke;
+    color: black;
+}
+
+
+.jumbtron .effect-wrap .effect{
+    position: absolute;
+    z-index: -1;
+}
+
+.contact{
+    min-height: 600px;
+    margin-top: 55px;
+    font-family: 'Changa', sans-serif;  
+}
+
+.contact-text h1{
+    font-size: 38px;
+}
+
+
+
+.panel{
+   
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    text-align: center;
+    padding: 20px;
+    margin: 50px 20px;
+    
+}
+
+.panel .panel-item h1{ 
+    margin: 10px;
+    font-size: 20px;
+}
+
+.panel i{
+    font-size: 25px;
+}
+
+.formulir, .message{
+    margin-top: 100px;
+    
+
+}
+
+.formulir{
+   margin-top: 55px;
+   min-height: 750px;
+    
+}
+
+.formulir .form-floating{
+    margin-bottom: 18px;
+}
+
+/* 
+.effect-wrap{
+    position: absolute;
+    z-index: -1;
+} */
+
+
+/* .effect-1{
+    width: 30px;
+    height: 30px;
+    border: 3px solid #43ffca;
+    
+    animation: spin 10s linear infinite;
+}
+
+.effect-2{
+    left:3%;
+    bottom: -5%;
+    width: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    animation: topBounce 3s ease-in-out infinite;
+}
+.effect-2 div{
+    height:3px;
+    width: 3px;
+    background-color:#98fade;
+    margin: 0 3px 8px;
+}
+
+/* .effect-3{
+    height: 180px;
+    width: 180px;
+    border: 5px solid #98fade;
+    border-radius: 50%;
+    left:54%;
+    top: -195px;
+    animation: leftBounce 3s ease-in-out infinite;    
+ } */
+
+/* @keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(600deg);
+    }
+}
+
+
+@keyframes topBounce{
+    0%,100%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(25px);
+    }
+} */ 
+/*
+@keyframes leftBounce{
+    0%,100%{
+        transform: translateX(0);
+    }
+
+    50%{
+        transform: translateX(25px);
+    }
+}*/
+/* .jumbotron img{
+    margin-top: 46px;
+/* } */
+
+footer{
+    margin-top: 100px;
+    background-color: #121313;
+    display: block;
+    padding: 1rem;
+    font-family: 'Changa', sans-serif;
+   
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: turquoise;
+    text-decoration: none;
+}
+
+@media (max-width: 414px) {
+    
+    .jumbotron{
+        height: 346px;
+        padding: 4rem;
+    }
+    .jumbotron h1, h2{
+        margin-top: 48px;
+        font-size: 35px;
+    }
+
+    .jumbotron .display-4 .btn-outline-secondary{
+        color:white;
+        background: transparent;
+        text-transform: uppercase;
+        text-shadow:none;
+        font-size: 12px;
+        margin: 30px 0px;
+        
+    }
+
+    .panel{
+        margin: 20px;
+        width: 80%;
+    }
+
+}
+
+
+
+
+
