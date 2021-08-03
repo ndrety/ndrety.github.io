@@ -93,7 +93,6 @@
 }
 
 
-
 .panel{
     text-align: center;
     padding: 20px;
@@ -107,6 +106,7 @@
 }
 
 .panel i{
+    margin: 16px;
     font-size: 25px;
 }
 
