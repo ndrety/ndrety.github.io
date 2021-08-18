@@ -20,7 +20,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
           <a class="navbar-brand" href="#">Andre</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,57 +61,53 @@
       </section>
       -->
       <section class="jumbotron">
-          <h1>Andre Timothy</h1>
+        <div class="col-lg hmuncul">
+        <h1>Andre Timothy</h1>
           
           
           <div class="display-4">
           <a href="https://www.instagram.com/ndree__/" class="btn btn-outline-secondary"><i class="fab fa-instagram"> | Instagram</i></a>
           <a href="https://web.facebook.com/andre.t.739" class="btn btn-outline-secondary"><i class="fab fa-facebook-f"></i> | Facebook</i></a>
           </div>
-          
-        
-
-        <!-- <div class="effect-wrap">
-
-          <div class="effect effect-1">
-          </div>
-          
-          <div class="effect effect-2">
-            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-            <div></div>
-          </div> -->
-        
-        </div>
-      
-
       </section>
-          <!-- <img src="img/profil.jpg" width="150" class="rounded-circle img-thumbnail"> -->
-          <!-- <div id="typedtext"></div> -->
-       
+      <!-- <img src="img/profil.jpg" width="150" class="rounded-circle img-thumbnail"> -->
+     
+ 
+
+
+
 
       <section class="contact" id="contact">
-          <div class="container">
 
-          <div class="row">
-            <div class="col-lg contact-text">
-              <h1 align="center">Contact</h1>
+        <div class="effect-wrap">
+          <div class="effect effect-1"></div>
+          <div class="effect effect-3"></div> 
+        </div>
+
+          <div class="container">
+            
+            <div class="row">
+              <div class="col-lg contact-text">
+                <h1 align="center">Contact</h1>
+              </div>
             </div>
-          </div>
+
+          
           
           <div class="row justify-content-center">
             <div class="col-lg panel">
               <div class="row">
-                <div class="col-md panel-item">
+                <div class="col-lg panel-item">
                   <i class="fas fa-phone"></i>
                     <h1>Phone</h1>
-                    <p align="center">+62 896-8032-2703</p>
+                    <p align="center">08980322703</p>
                 </div>
               </div>
             </div>
             
             <div class="col-lg panel">
               <div class="row">
-                <div class="col-md panel-item">
+                <div class="col-lg panel-item">
                   <i class="fas fa-envelope"></i>
                     <h1>Email</h1>
                     <p align="center">ndree.timothy@gmail.com</p>
@@ -119,7 +115,7 @@
               </div>
             </div>
   
-            <div class="col-md panel">
+            <div class="col-lg panel">
               <div class="row">
                 <div class="col-lg panel-item">
                   <i class="fas fa-map-marker-alt"></i>
@@ -162,6 +158,19 @@
         </div> -->
       </div>
       </section>
+
+      <div class="darkmode">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="label">
+          <span class="fas fa-moon" onclick="setDarkMode(false)"></span>
+          <span class="fas fa-sun"  onclick="setDarkMode(true)"></span>
+          <div class="ball"></div>
+        </label>
+      </div>
+
+
+
+
       
     <footer class="text-light text-center">
       <a href="#">Home</a> | 
@@ -187,45 +196,10 @@
 
 
 
-    <!-- <script> 
-      var aText = new Array(
-"Hi, I'am Andre Timothy", 
-"Thanks for coming."
-);
-var iSpeed = 60; // time delay of print out
-var iIndex = 0; // start printing array at this posision
-var iArrLength = aText[0].length; // the length of the text array
-var iScrollAt = 20; // start scrolling up at this many lines
- 
-var iTextPos = 0; // initialise text position
-var sContents = ''; // initialise contents variable
-var iRow; // initialise current row
- 
-function typewriter()
-{
- sContents =  ' ';
- iRow = Math.max(0, iIndex-iScrollAt);
- var destination = document.getElementById("typedtext");
- 
- while ( iRow < iIndex ) {
-  sContents += aText[iRow++] + '<br />';
- }
- destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
- if ( iTextPos++ == iArrLength ) {
-  iTextPos = 0;
-  iIndex++;
-  if ( iIndex != aText.length ) {
-   iArrLength = aText[iIndex].length;
-   setTimeout("typewriter()", 500);
-  }
- } else {
-  setTimeout("typewriter()", iSpeed);
- }
-}
-typewriter();
-    </script>
-    -->
-    
+  
+
+
+   
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/script.js"></script>
