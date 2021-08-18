@@ -86,11 +86,13 @@
     min-height: 600px;
     margin-top: 55px;
     font-family: 'Changa', sans-serif;  
+    position: relative;
 }
 
 .contact-text h1{
     font-size: 38px;
 }
+
 
 
 .panel{
@@ -111,8 +113,8 @@
 }
 
 .panel .panel-item{
-    opacity: 0;
-    transform: translate(0, -40px);
+    opacity: 0; 
+    transform: translate(0, -40px); 
     transition: 1s;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
@@ -139,48 +141,35 @@
     margin-bottom: 18px;
 }
 
-/* 
-.effect-wrap{
+
+.effect-wrap .effect{
     position: absolute;
     z-index: -1;
+}
+
+
+ /* .effect-1{
+    width: 33px;
+    height: 33px;
+    right: 50%;
+    bottom: 4%;
+    border: 3px solid #8857e2;
+    animation: spin 10s linear infinite;
 } */
 
 
-/* .effect-1{
-    width: 30px;
-    height: 30px;
-    border: 3px solid #43ffca;
-    
-    animation: spin 10s linear infinite;
-}
 
-.effect-2{
-    left:3%;
-    bottom: -5%;
-    width: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    animation: topBounce 3s ease-in-out infinite;
-}
-.effect-2 div{
-    height:3px;
-    width: 3px;
-    background-color:#98fade;
-    margin: 0 3px 8px;
-}
-
-/* .effect-3{
-    height: 180px;
-    width: 180px;
-    border: 5px solid #98fade;
+.effect-3{
+    height: 163px;
+    width: 163px;
+    left: 55%;
+    top: -28%;
+    border: 5px solid #f74438;
     border-radius: 50%;
-    left:54%;
-    top: -195px;
     animation: leftBounce 3s ease-in-out infinite;    
- } */
+ } 
 
-/* @keyframes spin{
+ @keyframes spin{
     0%{
         transform: rotate(0deg);
     }
@@ -191,16 +180,8 @@
 }
 
 
-@keyframes topBounce{
-    0%,100%{
-        transform: translateY(0);
-    }
 
-    50%{
-        transform: translateY(25px);
-    }
-} */ 
-/*
+
 @keyframes leftBounce{
     0%,100%{
         transform: translateX(0);
@@ -209,7 +190,11 @@
     50%{
         transform: translateX(25px);
     }
-}*/
+}
+
+
+
+
 /* .jumbotron img{
     margin-top: 46px;
 /* } */
@@ -232,6 +217,89 @@ footer a:hover{
     color: turquoise;
     text-decoration: none;
 }
+
+
+.darkmode{
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.label{
+    background-color: #111;
+    height: 28px;
+    width: 53px;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+}
+
+.fa-moon{
+    color: rgb(255, 166, 0);
+}
+
+.fa-sun{
+    color: yellow;
+}
+
+.ball{
+    background-color: #fff;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 4px;
+    left: 4px;
+    border-radius: 50%;
+    transition:  transform 0.3s linear;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
+}
+
+
+
+
+#darkmode{
+    background-color: #201f1f;
+    color: white;
+}
+
+#darkmode .navbar{
+    background-color:  #242424;
+    color: turquoise;
+}
+
+#darkmode .jumbotron{
+    background-color:  #242424;
+    color: turquoise;
+}
+
+#darkmode .panel{
+    background-color:#242424;
+    color: white;
+    box-shadow: rgb(255, 255, 255) 0px 6px 12px -2px, rgb(255, 255, 255) 0px 3px 7px -3px;
+}
+
+#darkmode footer{
+    background-color:#242424;
+    color: white;
+}
+
+
+
+
+
+
+
 
 @media (max-width: 576px) {
     
@@ -258,5 +326,11 @@ footer a:hover{
         margin: 20px;
         width: 80%;
     }
+
+    .effect-3{ 
+        left: 28%;
+        top: -27%;
+      
+     } 
 
 }
