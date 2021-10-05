@@ -107,6 +107,8 @@
     font-size: 20px;
 }
 
+
+
 .panel i{
     margin: 16px;
     font-size: 25px;
@@ -124,18 +126,16 @@
     transform: translate(0,0px);
 }
 
+.formulir{
+    margin-top: 34px;
+    min-height: 650px;
+     
+ }
 
 .formulir, .message{
     margin-top: 100px;
-    
-
 }
 
-.formulir{
-   margin-top: 55px;
-   min-height: 750px;
-    
-}
 
 .formulir .form-floating{
     margin-bottom: 18px;
@@ -275,18 +275,18 @@ footer a:hover{
 
 #darkmode .navbar{
     background-color:  #242424;
-    color: turquoise;
+    
 }
 
 #darkmode .jumbotron{
     background-color:  #242424;
-    color: turquoise;
+    
 }
 
 #darkmode .panel{
     background-color:#242424;
     color: white;
-    box-shadow: rgb(255, 255, 255) 0px 6px 12px -2px, rgb(255, 255, 255) 0px 3px 7px -3px;
+    box-shadow: 0px 0px 5px rgba(255, 253, 253, 0.3)
 }
 
 #darkmode footer{
@@ -294,6 +294,11 @@ footer a:hover{
     color: white;
 }
 
+#dadrkmode .formulir .btn-outline-dark{
+    background-color:  #242424;
+    color: #242424;
+    
+}
 
 
 
