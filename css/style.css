@@ -410,6 +410,7 @@ footer a:hover{
         right: 0;
         height: 100vh;
         width: 60%;
+        z-index:1;
         align-items: center;
         justify-content: space-evenly;
         transform: translateX(100%); /* buang ke kanan kasih di body overflow-x biar ke tutup*/
