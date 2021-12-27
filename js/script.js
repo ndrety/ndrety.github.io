@@ -4,7 +4,7 @@ $(window).scroll (function(){
 	
 
 	
-	if ( wScroll > $('.contact').offset().top - 250){
+	if ( wScroll > $('.contact').offset().top -10){
 		$('.contact .contact-text').each(function(i){
 			setTimeout(function(){
 				$('.contact .contact-text').eq(i).addClass('muncul');
@@ -13,7 +13,7 @@ $(window).scroll (function(){
 	};
 	
     
-	if ( wScroll > $('.panel').offset().top -350){
+	if ( wScroll > $('.panel').offset().top -10){
 		$('.panel .panel-item').each(function(i){
 			setTimeout(function(){
 				$('.panel .panel-item').eq(i).addClass('muncul');
