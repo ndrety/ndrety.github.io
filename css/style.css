@@ -405,7 +405,7 @@ footer a:hover{
         display: flex;
         flex-direction: column;
         background-color:#27353b;
-        position: absolute;
+        position: fixed;
         top: 50px;
         right: 0;
         height: 100vh;
