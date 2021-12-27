@@ -20,12 +20,13 @@ $(window).scroll (function(){
 			}, 200 * (i+1));
 		});
 	};
-	
-
-	
 });
 
+// const checkbox = document.getElementById('checkbox');
 
+// checkbox.addEventListener('change', ()=>{
+// 	document.body.classList.toggle('dark');
+// });
 
 function setDarkMode(isDark){
 	if(isDark){
@@ -34,3 +35,10 @@ function setDarkMode(isDark){
 		document.body.setAttribute('id','')
 	}
 }
+
+const menuToggle = document.querySelector('.menu-toggle input');
+const nav = document.querySelector('header nav .left .menu');
+
+menuToggle.addEventListener('click', function(){
+	nav.classList.toggle('slide');
+});
