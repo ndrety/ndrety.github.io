@@ -21,7 +21,7 @@
 
   <body>
       <header>
-        <div class="container">
+        
 
           <nav>
             <div class="left">
@@ -31,8 +31,9 @@
               </div>
           
               <div class="menu">
-                <a href="">Home</a>
+                <a href="#">Home</a>
                 <a href="#contact">Contact</a>
+                <a href="#message">Message</a>
               </div>
         
 
@@ -46,7 +47,7 @@
 
           </nav>
 
-        </div>
+ 
       </header>
 
       <section class="jumbotron">
@@ -61,11 +62,6 @@
       </section>
       <!-- <img src="img/profil.jpg" width="150" class="rounded-circle img-thumbnail"> -->
      
- 
-
-
-
-
       <section class="contact" id="contact">
 
         <div class="effect-wrap">
@@ -81,69 +77,72 @@
               </div>
             </div>
 
-          
-          
           <div class="row justify-content-center">
             <div class="col-lg panel">
               <div class="row">
-                <div class="col-lg panel-item">
-                  <i class="fas fa-phone"></i>
+               
+                    <i class="fas fa-phone"></i>
                     <h1>Phone</h1>
                     <p align="center">+62-898-8032-2703</p>
-                </div>
+               
               </div>
             </div>
             
             <div class="col-lg panel">
               <div class="row">
-                <div class="col-lg panel-item">
+               
                   <i class="fas fa-envelope"></i>
                     <h1>Email</h1>
                     <p align="center">ndree.timothy@gmail.com</p>
-                </div>
+         
               </div>
             </div>
   
             <div class="col-lg panel">
               <div class="row">
-                <div class="col-lg panel-item">
+        
                   <i class="fas fa-map-marker-alt"></i>
                     <h1>Address</h1>
                     <p align="center">Sumatera Selatan, Palembang</p>
-                </div>
+    
               </div>
             </div>
           </div>
 
-        <!-- <div class="row justify-content-center">
-          <div class="col-8">
-            <form class="formulir">
-          
+        <div class="row justify-content-center" id="message">
+          <div class="col-8 formulir" >
+            
+            <h1 align="center">Message</h1>
+            
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+              Thank you
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            
+            <form name='ndrety-contact-form'>
               <div class="mb-3">
-                
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
-                
-              </div>
+                <input type="text" class="form-control" id="nama" name="nama" autocomplete="off" placeholder="Name">
+              </div> 
+              
               <div class="mb-3">
-                
-                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Email">
-              </div>
-              <div class="mb-3">
-                
-                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Subject">
+                <input type="email" class="form-control" id="email" name="email" autocomplete="off" placeholder="Email">
               </div>
 
-             
-                <div class="form-floating">
-                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                </div>
-           
 
-              <button type="submit" class="btn btn-outline-dark" style="width : 100px">Send</button>
+              <div class="form-floating">
+                <textarea class="form-control" name="pesan" style="height: 100px"></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-outline-dark btn-kirim" style="width : 100px">Send</button>
+
+              <button class="btn btn-outline-dark btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  Loading...
+                </button>
             </form>
           </div>
         </div>
-      </div> -->
+      </div>
       </section>
 
       <div class="darkmode">
@@ -155,15 +154,15 @@
         </label>
       </div>
 
+      
     <footer class="text-light text-center">
       <a href="#">Home</a> | 
-      <a href="#contact">Contact</a> | 
-      <a href="https://github.com/ndrety"><i class="fab fa-github"></i> Github</a>
-
-     
+      <a href="#contact">Contact</a>
+      <!-- <a href="https://github.com/ndrety"><i class="fab fa-github"></i> Github</a> -->
       <p>	&copy; 2021 | Andre</p>
     </footer>  
     
+
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/script.js"></script>
