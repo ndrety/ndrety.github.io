@@ -53,15 +53,13 @@ const myAlert = document.querySelector('.my-alert');
 
 form.addEventListener('submit', e => {
   e.preventDefault()
-  //Ketika tombol diklik
-  //Tampilkan tombol loading, tombol kirim hilang 
-  
+ 
   btnLoading.classList.toggle('d-none');
   btnKirim.classList.toggle('d-none');
 
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 	.then(response => {
-	  //Tampilkan tombol kirim, tombol loading hilang 
+
 	  btnLoading.classList.toggle('d-none');
 	  btnKirim.classList.toggle('d-none');
 	  
