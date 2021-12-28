@@ -1,26 +1,3 @@
-/* .navbar{
-    background-color:#27353b;
-    font-family: 'Changa', sans-serif;
-}
-
-.navbar-nav{
-    text-transform: uppercase;
-    margin-left: auto;
-}
-
-.navbar-nav .nav-item .nav-link{
-   
-    color: white;
-    margin-right: 40px;
-    
-}
-
-.navbar-nav .nav-item .nav-link:hover{
-    
-    transition: all ease 0,5s;
-    color: turquoise;
-} */
-
 body{
     overflow-x: hidden;
     margin: 0;
@@ -66,7 +43,6 @@ header nav .left a:hover{
 }
 
 
-
 /* Hamburger Menu Section*/
 .menu-toggle span{
     display: block;
@@ -106,7 +82,6 @@ header nav .left a:hover{
     transform-origin: 0 100%; /*Sumbu Poros x dan y*/
 }
 
-/* ketika input di cek, cari anak span yang 2 */
 .menu-toggle input:checked ~ span:nth-child(2){
   transform:rotate(45deg) translate(-1px, -1px );
 }
@@ -144,7 +119,6 @@ header nav .left a:hover{
     font-family: 'Roboto Mono', monospace;
     text-align: center;
     text-shadow: 0px 0px 2px black; 
-
 }
 
 
@@ -219,7 +193,7 @@ header nav .left a:hover{
 
 .formulir{
     margin-top: 25px;
-    min-height: 420px;
+    min-height: 370px;
  }
 
 .formulir h1{
@@ -236,55 +210,6 @@ header nav .left a:hover{
     position: absolute;
     z-index: -1;
 }
-
-
- /* .effect-1{
-    width: 33px;
-    height: 33px;
-    right: 50%;
-    bottom: 4%;
-    border: 3px solid #8857e2;
-    animation: spin 10s linear infinite;
-} */
-
-
-
-/* .effect-3{
-    height: 163px;
-    width: 163px;
-    left: 55%;
-    bottom: 28%;
-    border: 5px solid #f74438;
-    border-radius: 50%;
-    animation: leftBounce 3s ease-in-out infinite;    
- } 
-
- @keyframes spin{
-    0%{
-        transform: rotate(0deg);
-    }
-
-    100%{
-        transform: rotate(600deg);
-    }
-}
-
-@keyframes leftBounce{
-    0%,100%{
-        transform: translateX(0);
-    }
-
-    50%{
-        transform: translateX(25px);
-    }
-}
-
- */
-
-
-/* .jumbotron img{
-    margin-top: 46px;
-/* } */
 
 footer{
     margin-top: 100px;
@@ -430,7 +355,7 @@ footer a:hover{
         z-index: 1;
         align-items: center;
         justify-content: space-evenly;
-        transform: translateX(100%); /* buang ke kanan kasih di body overflow-x biar ke tutup*/
+        transform: translateX(100%); 
         transition: ease 0.5s;
     }
 
@@ -438,7 +363,7 @@ footer a:hover{
         display: flex;
     }
 
-    /* pada saat ada class slide maka balikin translate ke 0*/
+    
     header nav .left .menu.slide{
         transform: translateX(0);
         opacity: 1;
@@ -482,6 +407,19 @@ footer a:hover{
      }
 
      .formulir h1{
-         margin-top: 30px;
-     } 
+         margin-top: -20px;
+     }
+     
+
+}
+
+
+@media(max-width: 376px){
+.jumbotron .display-4 .btn-outline-secondary{
+    margin: -3px;
+    margin-top: 30px;
+    font-size: 12px;
+    
+}
+
 }
