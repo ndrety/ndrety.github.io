@@ -4,7 +4,7 @@ $(window).scroll (function(){
 	
 
 	
-	if ( wScroll > $('.contact').offset().top -850){
+	if ( wScroll > $('.contact').offset().top - 950){
 		$('.contact .contact-text').each(function(i){
 			setTimeout(function(){
 				$('.contact .contact-text').eq(i).addClass('muncul');
@@ -42,3 +42,35 @@ const nav = document.querySelector('header nav .left .menu');
 menuToggle.addEventListener('click', function(){
 	nav.classList.toggle('slide');
 });
+
+
+// Form sheet
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxhxRUYCuLxBgpntgsb70-CbbQj1bFqcx0We504jUVAdXCuiaE7pFKFbv_Dwpeq9UJL_g/exec'
+const form = document.forms['ndrety-contact-form']
+const btnKirim = document.querySelector('.btn-kirim');
+const btnLoading = document.querySelector('.btn-loading');
+const myAlert = document.querySelector('.my-alert');
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  //Ketika tombol diklik
+  //Tampilkan tombol loading, tombol kirim hilang 
+  
+  btnLoading.classList.toggle('d-none');
+  btnKirim.classList.toggle('d-none');
+
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+	.then(response => {
+	  //Tampilkan tombol kirim, tombol loading hilang 
+	  btnLoading.classList.toggle('d-none');
+	  btnKirim.classList.toggle('d-none');
+	  
+	  //Tampilkan Alert
+	  myAlert.classList.toggle('d-none');
+	  form.reset();
+	  console.log('Success!', response)
+	  
+	})
+	.catch(error => console.error('Error!', error.message))
+})
+
