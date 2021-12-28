@@ -23,6 +23,9 @@
 
 body{
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -34,12 +37,12 @@ header{
 header nav .left{
     display: flex;
     align-items: center;
-    padding: 0.5rem 0;
+    padding: 0.6rem 1rem;
     justify-content: space-between;
 }
 
 header .left .brand{
-    margin-right: 5rem;
+    margin-left: 1rem;
     color: white;
 }
 
@@ -62,12 +65,14 @@ header nav .left a:hover{
     transition: all ease 0.3s;
 }
 
+
+
 /* Hamburger Menu Section*/
 .menu-toggle span{
     display: block;
     width: 28px;
     height: 3px;
-    background-color: turquoise;
+    background-color: white;
     transition: all 0.3s;
 }
 
@@ -122,6 +127,7 @@ header nav .left a:hover{
     background-color:#27353b;
     width: 100%;
     padding: 8rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
 }
 
 .jumbotron h1{
@@ -182,36 +188,29 @@ header nav .left a:hover{
 }
 
 .contact-text h1{
-    font-size: 38px;
+    font-size: 33px;
 }
-
-
 
 .panel{
     text-align: center;
     padding: 20px;
     margin: 50px 20px;
-    
-}
-
-.panel .panel-item h1{ 
-    margin: 10px;
-    font-size: 20px;
-}
-
-
-
-.panel i{
-    margin: 16px;
-    font-size: 25px;
-}
-
-.panel .panel-item{
-    opacity: 0; 
     transform: translate(0, -40px); 
     transition: 1s;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    
 }
+
+.panel h1{ 
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.panel i{
+    margin-top: 10px;
+    font-size: 25px;
+}
+
 
 .panel .panel-item.muncul{
     opacity: 1;
@@ -219,15 +218,14 @@ header nav .left a:hover{
 }
 
 .formulir{
-    margin-top: 34px;
-    min-height: 650px;
-     
+    margin-top: 25px;
+    min-height: 420px;
  }
 
-.formulir, .message{
-    margin-top: 100px;
-}
-
+.formulir h1{
+     font-size: 33px;
+     margin-bottom: 20px;
+ }
 
 .formulir .form-floating{
     margin-bottom: 18px;
@@ -251,11 +249,11 @@ header nav .left a:hover{
 
 
 
-.effect-3{
+/* .effect-3{
     height: 163px;
     width: 163px;
     left: 55%;
-    top: -28%;
+    bottom: 28%;
     border: 5px solid #f74438;
     border-radius: 50%;
     animation: leftBounce 3s ease-in-out infinite;    
@@ -271,9 +269,6 @@ header nav .left a:hover{
     }
 }
 
-
-
-
 @keyframes leftBounce{
     0%,100%{
         transform: translateX(0);
@@ -284,7 +279,7 @@ header nav .left a:hover{
     }
 }
 
-
+ */
 
 
 /* .jumbotron img{
@@ -293,7 +288,7 @@ header nav .left a:hover{
 
 footer{
     margin-top: 100px;
-    background-color: #121313;
+    background-color:#27353b;
     display: block;
     padding: 1rem;
     font-family: 'Changa', sans-serif;
@@ -358,14 +353,19 @@ footer a:hover{
 }
 
 
-
+/* DARK MODE */
 
 #darkmode{
     background-color: #201f1f;
     color: white;
 }
 
-#darkmode .navbar{
+#darkmode header nav .left{
+    background-color:  #242424;
+    
+}
+
+#darkmode header nav .left .menu{
     background-color:  #242424;
     
 }
@@ -378,7 +378,13 @@ footer a:hover{
 #darkmode .panel{
     background-color:#242424;
     color: white;
-    box-shadow: 0px 0px 5px rgba(255, 253, 253, 0.3)
+    box-shadow: 0px 0px 2px rgba(255, 253, 253, 0.3)
+}
+
+#darkmode .panel-item{
+    background-color:#242424;
+    color: white;
+    box-shadow: 0px 0px 2px rgba(255, 253, 253, 0.3)
 }
 
 #darkmode footer{
@@ -386,11 +392,22 @@ footer a:hover{
     color: white;
 }
 
-#dadrkmode .formulir .btn-outline-dark{
-    background-color:  #242424;
-    color: #242424;
-    
+#darkmode .formulir .form-control{
+    background-color: #242424;
+    color: white;
+    border: black;
 }
+
+#darkmode .formulir .btn-kirim{
+    background-color: #242424;
+    color: white;
+}
+
+#darkmode .formulir .btn-loading{
+    background-color: white;
+    color: black;
+}
+
 
 /* Tablet */
 @media (max-width: 768px){
@@ -406,16 +423,15 @@ footer a:hover{
         flex-direction: column;
         background-color:#27353b;
         position: fixed;
-        top: 50px;
+        top: 54px;
         right: 0;
         height: 100vh;
         width: 60%;
-        z-index:1;
+        z-index: 1;
         align-items: center;
         justify-content: space-evenly;
         transform: translateX(100%); /* buang ke kanan kasih di body overflow-x biar ke tutup*/
-        transition: all 0.7s;
-        opacity: 0;
+        transition: ease 0.5s;
     }
 
     .menu-toggle{
@@ -461,9 +477,13 @@ footer a:hover{
       
      } 
 
+     .contact-text h1{
+         margin-bottom: 8%;
+     }
+
+     .formulir h1{
+         margin-top: 30px;
+     }
+     
+
 }
-
-
-
-
-
