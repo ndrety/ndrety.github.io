@@ -4,29 +4,32 @@ $(window).scroll (function(){
 	
 
 	
-	if ( wScroll > $('.contact').offset().top - 950){
+	if ( wScroll > $('.contact').offset().top - 300){
 		$('.contact .contact-text').each(function(i){
 			setTimeout(function(){
-				$('.contact .contact-text').eq(i).addClass('muncul');
+				$('.contact .contact-text').eq(i).addClass('show');
 			}, 200 * (i+1));
 		});
 	};
 	
     
-	if ( wScroll > $('.panel').offset().top -850){
-		$('.panel .panel-item').each(function(i){
+	if ( wScroll > $('.panel').offset().top - 300){
+		$('.panel').each(function(i){
 			setTimeout(function(){
-				$('.panel .panel-item').eq(i).addClass('muncul');
+				$('.panel').eq(i).addClass('show');
+			}, 200 * (i+1));
+		});
+	};
+	
+	if ( wScroll > $('.formulir').offset().top - 150){
+		$('.formulir').each(function(i){
+			setTimeout(function(){
+				$('.formulir').eq(i).addClass('show');
 			}, 200 * (i+1));
 		});
 	};
 });
 
-// const checkbox = document.getElementById('checkbox');
-
-// checkbox.addEventListener('change', ()=>{
-// 	document.body.classList.toggle('dark');
-// });
 
 function setDarkMode(isDark){
 	if(isDark){
@@ -53,7 +56,8 @@ const myAlert = document.querySelector('.my-alert');
 
 form.addEventListener('submit', e => {
   e.preventDefault()
- 
+
+  
   btnLoading.classList.toggle('d-none');
   btnKirim.classList.toggle('d-none');
 
@@ -63,7 +67,7 @@ form.addEventListener('submit', e => {
 	  btnLoading.classList.toggle('d-none');
 	  btnKirim.classList.toggle('d-none');
 	  
-	  //Tampilkan Alert
+
 	  myAlert.classList.toggle('d-none');
 	  form.reset();
 	  console.log('Success!', response)
