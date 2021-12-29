@@ -21,7 +21,7 @@ $(window).scroll (function(){
 		});
 	};
 	
-	if ( wScroll > $('.formulir').offset().top - 150){
+	if ( wScroll > $('.formulir').offset().top - 250){
 		$('.formulir').each(function(i){
 			setTimeout(function(){
 				$('.formulir').eq(i).addClass('show');
@@ -29,7 +29,6 @@ $(window).scroll (function(){
 		});
 	};
 });
-
 
 function setDarkMode(isDark){
 	if(isDark){
