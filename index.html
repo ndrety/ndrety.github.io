@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="home">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -16,7 +16,7 @@
     <script src="https://kit.fontawesome.com/e93f072adb.js" crossorigin="anonymous"></script>
     
 
-    <title>Welcome</title>
+    <title>Andre Timothy</title>
   </head>
 
   <body>
@@ -30,11 +30,10 @@
                 <h3>Andre</h3> 
               </div>
           
-              
               <div class="menu">
-                <a href="#">Home</a>
+                <a href="#home">Home</a>
                 <a href="#contact">Contact</a>
-                <a href="#message">Message</a>
+                <a href="#formulir">Message</a>
               </div>
         
 
@@ -52,13 +51,13 @@
       </header>
 
       <section class="jumbotron">
-          <div class="col-lg hmuncul">
+          <div class="col-lg hshow">
           <h1>Andre Timothy</h1>
           
           
           <div class="display-4">
-          <a href="https://www.instagram.com/ndree__/" class="btn btn-outline-secondary"><i class="fab fa-instagram"> | Instagram</i></a>
-          <a href="https://web.facebook.com/andre.t.739" class="btn btn-outline-secondary"><i class="fab fa-facebook-f"></i> | Facebook</i></a>
+          <a href="https://www.instagram.com/ndree__/" class="btn btn-outline-secondary"><i class="fab fa-instagram"></i> | instagram </a>
+          <a href="https://web.facebook.com/andre.t.739" class="btn btn-outline-secondary"><i class="fab fa-facebook-f"></i> | Facebook</a>
           </div>
       </section>
       <!-- <img src="img/profil.jpg" width="150" class="rounded-circle img-thumbnail"> -->
@@ -71,7 +70,6 @@
         </div>
 
           <div class="container">
-            
             <div class="row">
               <div class="col-lg contact-text">
                 <h1 align="center">Contact</h1>
@@ -80,7 +78,7 @@
 
           <div class="row justify-content-center">
             <div class="col-lg panel">
-              <div class="row">
+              <div class="row show">
                
                     <i class="fas fa-phone"></i>
                     <h1>Phone</h1>
@@ -90,7 +88,7 @@
             </div>
             
             <div class="col-lg panel">
-              <div class="row">
+              <div class="row show">
                
                   <i class="fas fa-envelope"></i>
                     <h1>Email</h1>
@@ -100,7 +98,7 @@
             </div>
   
             <div class="col-lg panel">
-              <div class="row">
+              <div class="row show">
         
                   <i class="fas fa-map-marker-alt"></i>
                     <h1>Address</h1>
@@ -110,7 +108,7 @@
             </div>
           </div>
 
-        <div class="row justify-content-center" id="message">
+        <div class="row justify-content-center" id="formulir">
           <div class="col-10 formulir" >
             
             <h1 align="center">Message</h1>
@@ -121,20 +119,20 @@
             </div>
             
             <form name='ndrety-contact-form'>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="nama" name="nama" autocomplete="off" placeholder="Name">
+              <div class="mb-3 show">
+                <input type="text" class="form-control" id="nama" name="nama" autocomplete="off" placeholder="Name" required>
               </div> 
               
-              <div class="mb-3">
-                <input type="email" class="form-control" id="email" name="email" autocomplete="off" placeholder="Email">
+              <div class="mb-3 show">
+                <input type="email" class="form-control" id="email" name="email" autocomplete="off" placeholder="Email" required>
               </div>
 
 
-              <div class="form-floating">
-                <textarea class="form-control" name="pesan" style="height: 100px"></textarea>
+              <div class="form-floating show">
+                <textarea class="form-control" name="pesan" style="height: 100px" required></textarea>
               </div>
               
-              <button type="submit" class="btn btn-outline-dark btn-kirim" style="width : 100px">Send</button>
+              <button type="submit" class="btn btn-outline-dark btn-kirim show" style="width : 100px">Send</button>
 
               <button class="btn btn-outline-dark btn-loading d-none" type="button" disabled>
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
@@ -158,8 +156,9 @@
       
     <footer class="text-light text-center">
       <a href="#">Home</a> | 
-      <a href="#contact">Contact</a> 
-      <p>&copy; 2021 | Andre</p>
+      <a href="#contact">Contact</a> | 
+      <a href="#formulir">Message</a>
+      <p>	&copy; 2021 by Andre. All Rights Reserved</p>
     </footer>  
     
 
